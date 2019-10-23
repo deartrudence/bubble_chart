@@ -1,0 +1,55 @@
+body {
+        font-family: 'Poppins', sans-serif;
+        text-align: center;
+        color: #0D3A5C;
+    }
+    circle:hover{
+    	opacity: 1;
+    }
+
+		.flex {
+			display: flex;
+			width: 90%;
+    	margin: 0 auto;
+		}
+    .legend {
+    	text-align: left;
+			display: grid;
+    	grid-gap: 10px;
+    	height: 50%;
+    	align-self: center;
+    }
+
+    .legend--country{
+			display: grid;
+    	grid-template-columns: 2fr 20fr;
+    	grid-gap: 20px;
+    }
+
+		.g-diagram{
+			position: relative;
+			margin: 0 auto;
+		}
+		#tooltip p#happiness{
+			font-size: 18px;
+		}
+    #tooltip {
+      position: absolute;
+      height: auto;
+      padding: 12px;
+      background-color: white;
+      box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+      pointer-events: none;
+			transition: 0.2s;
+			max-width: 80px;
+			color: white;
+    }
+
+    #tooltip p {
+    	margin: 0;
+    	font-size: 12px;
+    }
+    #tooltip.hidden {
+		  visibility: hidden;
+		  opacity: 0;
+		}
